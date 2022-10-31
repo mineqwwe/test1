@@ -1,0 +1,75 @@
+set ipt 9999999999999999999999999999999999
+setrate ipt
+set a 40
+set b 30
+set k 2
+op mul a a k
+op mul b b k
+op add r r 1
+op cos cosr r b
+op sin sinr r b
+op mul dx0 a cosr
+op mul dy0 b sinr
+print Ao
+op add Aox dx0 @thisx
+op add Aoy dy0 @thisy
+print A1
+op mul sinr1 sinr -1
+op mul dx1 sinr1 a
+op add A1x dx1 @thisx
+op mul dy1 b cosr
+op add A1y dy1 @thisy
+print Aoz中心对称
+op mul Aozx Aox -1
+op mul Aozy Aoy -1
+print A1z中心对称
+op mul A1zx A1x -1
+op mul A1zy A1y -1
+print 定义高h
+op pow ap a 2
+op pow bp b 2
+op add hp ap bp
+op pow h hp 0.5
+print 向上平移h
+print Aoh
+op add Aohx Aox 0
+op add Aohy Aoy h
+print A1h
+op add A1hx A1x 0
+op add A1hy A1y h
+print Aozh
+op add Aozhx Aozx 0
+op add Aozhy Aozy h
+print A1zh
+op add A1zhx A1zx 0
+op add A1zhy A1zy h
+print 创建正方形模块-参数:边长h-左下定位点(SQx,SQy)
+set draw @方块1-2
+set SQx 0
+set SQy 0
+set d1 0
+set d2 0
+op add drawx SQx d1
+op add drawy SQy d2
+setblock floor draw drawx drawy @derelict 0
+op add d2 d2 1
+jump 51 lessThanEq d2 h
+op sub d2 d2 1
+op add drawy SQy d2
+op add drawx SQx d1
+setblock floor draw drawx drawy @derelict 0
+op add d1 d1 1
+jump 58 lessThanEq d1 h
+op sub d1 d1 1
+op add drawx SQx d1
+op add drawy SQy d2
+setblock floor draw drawx drawy @derelict 0
+op sub d2 d2 1
+jump 64 greaterThanEq d2 0
+op add d2 d2 1
+op add drawy SQy d2
+op add drawx SQx d1
+setblock floor draw drawx drawy @derelict 0
+op sub d1 d1 1
+jump 70 greaterThanEq d1 0
+print 完成一个正方面绘制
