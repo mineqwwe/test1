@@ -2,9 +2,9 @@ on:
  push:
   branches:
   - main
-runs-on: ubuntu-latest
 jobs:
   deploy:
+  runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v3
