@@ -13,3 +13,5 @@ jobs:
         java-version: 17
     - name: echo java version
       run: java -version
+    - name: cpu info
+      run: cat /proc/cpuinfo
