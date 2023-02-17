@@ -2,8 +2,8 @@ on:
  push:
   branches:
   - main
+runs-on: ubuntu-latest
 jobs:
-  runs-on: ubuntu-latest
   deploy:
     steps:
     - name: Checkout
