@@ -3,6 +3,23 @@
 
 ### Record time with java
 
-Slowly Learning
+**Slowly Learning**
+
+##### Learning through Moblie phone
+Apps Recomand:
+
+- Acode
+- Android IDE
+- Edge
+- Github app
+- Jvdroid
+- Mix
+- Obsidian
+- Replit
+- Spack Editor
+- Termux
+- Termius
+
+
 
 
