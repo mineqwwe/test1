@@ -8,7 +8,7 @@
 ##### Learning through Moblie phone
 Apps Recomand:
 
-- ![[https://github.com/mineqwwe/java-learning/tree/main/png/Acode.png]][Acode ](https://github.com/deadlyjack/Acode)
+- [![Acode](https://github.com/mineqwwe/java-learning/tree/main/png/Acode.png)][Acode ](https://github.com/deadlyjack/Acode)
 - Android IDE
 - Edge
 - Github app
