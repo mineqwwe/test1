@@ -1,9 +1,9 @@
 [![.github/workflows/main.yml](https://github.com/mineqwwe/java-learning/actions/workflows/main.yml/badge.svg)](https://github.com/mineqwwe/java-learning/actions/workflows/main.yml)
 
 
-### Record time with java
+### Record time with Java
 
-**Slowly Learning**
+*Slowly Learning*
 
 ##### Learning through Moblie phone
 Apps Recomand:
@@ -12,13 +12,13 @@ Apps Recomand:
 - [**Android IDE**](https://github.com/AndroidIDEOfficial/AndroidIDE)
 - [**Edge**](https://www.microsoft.com/edge)
 - [**Github app**]()
-- [**Jvdroid**]
-- Mix
-- Obsidian
-- Replit
-- Spack Editor
-- Termux
-- Termius
+- [**Jvdroid**](https://play.google.com/store/apps/details?id=ru.iiec.jvdroid&gl=US)
+- [**Mix**](https://mixplorer.com/)
+- [**Obsidian**](https://obsidian.md/)
+- [**Replit**](https://replit.com/)
+- [**Spack Editor**](https://spck.io/)
+- [**Termux**](https://github.com/termux)
+- [**Termius**](https://www.termius.com/)
 
 
 
