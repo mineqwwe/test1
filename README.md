@@ -3,6 +3,6 @@
 
 ### Record time with java
 
-slow learning
+Slowly Learning
 
 
