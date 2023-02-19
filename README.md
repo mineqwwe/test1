@@ -8,11 +8,11 @@
 ##### Learning through Moblie phone
 Apps Recomand:
 
-- **Acode** [<img src="https://github.com/mineqwwe/java-learning/blob/main/png/Acode.png" alt="Acode" height="40">](https://github.com/deadlyjack/Acode)
-- Android IDE
-- Edge
-- Github app
-- Jvdroid
+- [**Acode** ](https://github.com/deadlyjack/Acode)
+- [**Android IDE**](https://github.com/AndroidIDEOfficial/AndroidIDE)
+- [**Edge**](https://www.microsoft.com/edge)
+- [**Github app**]()
+- [**Jvdroid**]
 - Mix
 - Obsidian
 - Replit
