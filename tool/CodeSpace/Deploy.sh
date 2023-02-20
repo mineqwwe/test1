@@ -1,4 +1,4 @@
-#dl jdk 8 11 17
+#dl jdk 8 11 17 gtadle-8.0
 sudo apt update
 sudo apt upgrade -y
 sudo apt install wget openssl vim -y
@@ -9,21 +9,28 @@ cd sdk
 wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.6_10.tar.gz
 #d_jdk11
 wget https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.18_10.tar.gz
-#jdk8
+#d_jdk8
 wget https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u362b09.tar.gz
+#d_gradle-8.0
+wget https://services.gradle.org/distributions/gradle-8.0-bin.zip
 
 #untar
 tar -xvf OpenJDK17U-jdk_x64_linux_hotspot_17.0.6_10.tar.gz
 tar -xvf OpenJDK11U-jdk_x64_linux_hotspot_11.0.18_10.tar.gz
 tar -xvf OpenJDK8U-jdk_x64_linux_hotspot_8u362b09.tar.gz
+unzip gradle-8.0-bin.zip
 
-#rm cache
+#clear cache
 rm OpenJDK8U-jdk_x64_linux_hotspot_8u362b09.tar.gz
 rm OpenJDK11U-jdk_x64_linux_hotspot_11.0.18_10.tar.gz
 rm OpenJDK17U-jdk_x64_linux_hotspot_17.0.6_10.tar.gz
+rm gradle-8.0-bin.zip
 
 #jdk dirs
-#jdk8u362-b09/jdk-11.0.18+10/jdk-17.0.6+10/
+#jdk8u362-b09/
+#jdk-11.0.18+10/
+#jdk-17.0.6+10/
+#gradle-8.0/
 
 #Android-cmdline-tools
 mkdir Android
