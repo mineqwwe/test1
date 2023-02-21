@@ -20,6 +20,7 @@ Apps Recomand:
 - [**Termux**](https://github.com/termux)
 - [**Termius**](https://www.termius.com/)
 - [**VHEditor**](https://github.com/vhqtvn/VHEditor-Android)
+- [**ZeroTermux**](https://github.com/hanxinhao000/ZeroTermux)
 
 
 
