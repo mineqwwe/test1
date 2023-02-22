@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt upgrade -y
 sudo apt install wget openssl vim unzip clang -y
-cd ~
+cd $HOME
 mkdir sdk
 cd sdk
 #d_jdk17
@@ -39,21 +39,30 @@ rm nim-1.6.10-linux_x64.tar.gz
 #nim-1.6.10
 
 #Android-cmdline-tools
+#Temporarily depoly jdk in order to run sdkmanager
+export JAVA_HOME="$HOME/sdk/jdk-17.0.6+10/"
+export PATH="$JAVA_HOME/bin:$PATH"
+export PATH="$JAVA_HOME/lib:$PATH"
+
 mkdir Android
 cd Android
+
 wget https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
 uzip commandlinetools-linux-9477386_latest.zip
 rm commandlinetools-linux-9477386_latest.zip
+
 cd cmdline-tools
 mkdir latest
 mv bin latest
 mv lib latest
 mv NOTICE.txt latest
 mv source.properties latest
-cd latest
-cd bin
-chmod 777 sdkmanager
-./sdkmanager --update
+
+cd latest/bin
+
+sudo chmod 777 sdkmanager
+./sdkmanager --update -y
 #30/31/33
 ./sdkmanager --install -y "platform-tools" "platforms;android-31" "platforms;android-33" "build-tools;33.0.2" "build-tools;31.0.0" "build-tools;30.0.3" "platforms;android-30"
+./sdkmanager --update -y
 echo done
