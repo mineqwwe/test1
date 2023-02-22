@@ -20,7 +20,7 @@ wget https://nim-lang.org/download/nim-1.6.10-linux_x64.tar.xz
 tar -xvf OpenJDK17U-jdk_x64_linux_hotspot_17.0.6_10.tar.gz
 tar -xvf OpenJDK11U-jdk_x64_linux_hotspot_11.0.18_10.tar.gz
 tar -xvf OpenJDK8U-jdk_x64_linux_hotspot_8u362b09.tar.gz
-tar -xvf nim-1.6.10-linux_x64.tar.gz
+tar -xvf nim-1.6.10-linux_x64.tar.xz
 
 unzip gradle-8.0-bin.zip
 
@@ -41,6 +41,7 @@ rm nim-1.6.10-linux_x64.tar.gz
 #Android-cmdline-tools
 #Temporarily depoly jdk in order to run sdkmanager
 export JAVA_HOME="$HOME/sdk/jdk-17.0.6+10/"
+export JAVA_ROOT="$JAVA_HOME"
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$JAVA_HOME/lib:$PATH"
 
@@ -48,7 +49,7 @@ mkdir Android
 cd Android
 
 wget https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
-uzip commandlinetools-linux-9477386_latest.zip
+unzip commandlinetools-linux-9477386_latest.zip
 rm commandlinetools-linux-9477386_latest.zip
 
 cd cmdline-tools
@@ -61,8 +62,10 @@ mv source.properties latest
 cd latest/bin
 
 sudo chmod 777 sdkmanager
-./sdkmanager --update -y
+./sdkmanager --update
 #30/31/33
-./sdkmanager --install -y "platform-tools" "platforms;android-31" "platforms;android-33" "build-tools;33.0.2" "build-tools;31.0.0" "build-tools;30.0.3" "platforms;android-30"
-./sdkmanager --update -y
+./sdkmanager --install "platform-tools" "platforms;android-31" "platforms;android-33" "build-tools;33.0.2" "build-tools;31.0.0" "build-tools;30.0.3" "platforms;android-30"
+#NOW press enter to agree google's policy
+y
+./sdkmanager --update
 echo done
