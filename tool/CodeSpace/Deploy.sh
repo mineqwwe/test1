@@ -1,7 +1,7 @@
-#dl jdk 8 11 17 gtadle-8.0
+#dl jdk 8 11 17 gtadle-8.0 nim clang
 sudo apt update
 sudo apt upgrade -y
-sudo apt install wget openssl vim -y
+sudo apt install wget openssl vim nim clang -y
 cd ~
 mkdir sdk
 cd sdk
