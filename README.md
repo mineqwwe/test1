@@ -17,6 +17,7 @@ Apps Recomand:
 - [**Obsidian**](https://obsidian.md/)
 - [**Replit**](https://replit.com/)
 - [**Spack Editor**](https://spck.io/)
+- [**SpaceVim**](https://github.com/SpaceVim/SpaceVim)
 - [**Termux**](https://github.com/termux)
 - [**Termius**](https://www.termius.com/)
 - [**VHEditor**](https://github.com/vhqtvn/VHEditor-Android)
