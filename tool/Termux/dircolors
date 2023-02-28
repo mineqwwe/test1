@@ -1,0 +1,310 @@
+
+# Dark 256 color solarized theme for the color GNU ls utility.
+# Used and tested with dircolors (GNU coreutils) 8.5
+#
+# @author  {@link http://sebastian.tramp.name Sebastian Tramp}
+#
+# More Information at
+# https://github.com/seebi/dircolors-solarized
+
+# Term Section
+TERM Eterm
+TERM alacritty
+TERM ansi
+TERM color-xterm
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM cons25
+TERM console
+TERM cygwin
+TERM dtterm
+TERM dvtm
+TERM dvtm-256color
+TERM eterm-color
+TERM fbterm
+TERM gnome
+TERM gnome-256color
+TERM jfbterm
+TERM konsole
+TERM konsole-256color
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM mlterm
+TERM putty
+TERM putty-256color
+TERM rxvt
+TERM rxvt-256color
+TERM rxvt-cygwin
+TERM rxvt-cygwin-native
+TERM rxvt-unicode
+TERM rxvt-unicode256
+TERM rxvt-unicode-256color
+TERM screen
+TERM screen-16color
+TERM screen-16color-bce
+TERM screen-16color-s
+TERM screen-16color-bce-s
+TERM screen-256color
+TERM screen-256color-bce
+TERM screen-256color-s
+TERM screen-256color-bce-s
+TERM screen-256color-italic
+TERM screen-bce
+TERM screen-w
+TERM screen.linux
+TERM screen.xterm-256color
+TERM st
+TERM st-meta
+TERM st-256color
+TERM st-meta-256color
+TERM tmux
+TERM tmux-256color
+TERM vt100
+TERM xterm
+TERM xterm-16color
+TERM xterm-256color
+TERM xterm-256color-italic
+TERM xterm-88color
+TERM xterm-color
+TERM xterm-debian
+TERM xterm-kitty
+TERM xterm-termite
+
+## Documentation
+#
+# standard colors
+#
+# Below are the color init strings for the basic file types. A color init
+# string consists of one or more of the following numeric codes:
+# Attribute codes:
+#00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+#
+#
+# 256 color support
+# see here: http://www.mail-archive.com/bug-coreutils@gnu.org/msg11030.html)
+#
+# Text 256 color coding:
+# 38;5;COLOR_NUMBER
+# Background 256 color coding:
+# 48;5;COLOR_NUMBER
+COLOR all
+EIGHTBIT 1
+## Special files
+
+NORMAL 00;38 # no color code at all
+#FILE 00 # regular file: use no color at all
+#RESET 0 # reset to "normal" color
+DIR 01;33; # directory 01;34
+LINK 04;01;33; # symbolic link. (If you set this to 'target' instead of a
+ # numerical value, the color is as for the file pointed to.)
+MULTIHARDLINK 00 # regular file with more than one link
+FIFO 01;93;47 # pipe
+SOCK 01;93;47 # socket
+DOOR 01;93;47 # door
+BLK 01;93;47 # block device driver
+CHR 01;93;47 # character device driver
+ORPHAN 00;31;100 # symlink to nonexistent file, or non-stat'able file
+SETUID 00;31;100 # file that is setuid (u+s)
+SETGID 07;33 # file that is setgid (g+s)
+CAPABILITY 07;31 # file with capability
+STICKY_OTHER_WRITABLE 01;93;102 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 00;34;47 # dir that is other-writable (o+w) and not sticky
+STICKY 07;37 # dir with the sticky bit set (+t) and not other-writable
+# This is for files with execute permission:
+EXEC 01;03;96
+
+## Archives or compressed (violet + bold for compression)
+.tar    01;03;38
+.tgz    01;03;38
+.arj    01;03;38
+.taz    01;03;38
+.lzh    01;03;38
+.lzma   01;03;38
+.tlz    01;03;38
+.txz    01;03;38
+.zip    01;03;38
+.zst    01;03;38
+.z      01;03;38
+.Z      01;03;38
+.dz     01;03;38
+.gz     01;03;38
+.lz     01;03;38
+.xz     01;03;38
+.bz2    01;03;38
+.bz     01;03;38
+.tbz    01;03;38
+.tbz2   01;03;38
+.tz     01;03;38
+.deb    01;03;38
+.rpm    01;03;38
+.jar    01;03;38
+.rar    01;03;38
+.ace    01;03;38
+.zoo    01;03;38
+.cpio   01;03;38
+.7z     01;03;38
+.rz     01;03;38
+.apk    01;03;38
+.gem    01;03;38
+
+# Image formats (yellow)
+.jpg    00;38
+.JPG    00;38 #stupid but needed
+.jpeg   00;38
+.gif    00;38
+.bmp    00;38
+.pbm    00;38
+.pgm    00;38
+.ppm    00;38
+.tga    00;38
+.xbm    00;38
+.xpm    00;38
+.tif    00;38
+.tiff   00;38
+.png    00;38
+.PNG    00;38
+.svg    00;38
+.svgz   00;38
+.mng    00;38
+.pcx    00;38
+.dl     00;38
+.xcf    00;38
+.xwd    00;38
+.yuv    00;38
+.cgm    00;38
+.emf    00;38
+.eps    00;38
+.CR2    00;38
+.ico    00;38
+.nef    00;38 # Nikon RAW format
+.NEF    00;38
+.webp   00;38 # https://en.wikipedia.org/wiki/WebP
+.heic   00;38
+.HEIC   00;38
+
+# Files of special interest (base1 + bold)
+.tex             04;01;38
+.rdf             04;01;38
+.owl             04;01;38
+.n3              04;01;38
+.ttl             04;01;38
+.nt              04;01;38
+.torrent         04;01;38
+.xml             04;01;38
+*Makefile        04;01;38
+*Rakefile        04;01;38
+*Dockerfile      04;01;38
+*build.xml       04;01;38
+*rc              04;01;38
+*1               04;01;38
+.nfo             04;01;38
+*README          04;01;38
+*README.txt      04;01;38
+*readme.txt      04;01;38
+.md              04;01;38
+*README.markdown 04;01;38
+.ini             04;01;38
+.yml             04;01;38
+.cfg             04;01;38
+.conf            04;01;38
+.h               04;01;38
+.hpp             04;01;38
+.c               04;01;38
+.cpp             04;01;38
+.cxx             04;01;38
+.cc              04;01;38
+.objc            04;01;38
+.sqlite          04;01;38
+.go              04;01;38
+.sql             04;01;38
+.csv             04;01;38
+
+# "unimportant" files as logs and backups (base01)
+.log        01;37
+.bak        01;37
+.aux        01;37
+.lof        01;37
+.lol        01;37
+.lot        01;37
+.out        01;37
+.toc        01;37
+.bbl        01;37
+.blg        01;37
+*~          01;37
+*#          01;37
+.part       01;37
+.incomplete 01;37
+.swp        01;37
+.tmp        01;37
+.temp       01;37
+.o          01;37
+.pyc        01;37
+.class      01;37
+.cache      01;37
+
+# Audio formats (orange)
+.aac    00;38
+.au     00;38
+.flac   00;38
+.mid    00;38
+.midi   00;38
+.mka    00;38
+.mp3    00;38
+.mpc    00;38
+.ogg    00;38
+.opus   00;38
+.ra     00;38
+.wav    00;38
+.m4a    00;38
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+.axa    00;38
+.oga    00;38
+.spx    00;38
+.xspf   00;38
+
+# Video formats (as audio + bold)
+.mov    00;38
+.MOV    00;38
+.mpg    00;38
+.mpeg   00;38
+.m2v    00;38
+.mkv    00;38
+.ogm    00;38
+.mp4    00;38
+.m4v    00;38
+.mp4v   00;38
+.vob    00;38
+.qt     00;38
+.nuv    00;38
+.wmv    00;38
+.asf    00;38
+.rm     00;38
+.rmvb   00;38
+.flc    00;38
+.avi    00;38
+.fli    00;38
+.flv    00;38
+.gl     00;38
+.m2ts   00;38
+.divx   00;38
+.webm   00;38
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+.axv 00;38
+.anx 00;38
+.ogv 00;38
+.ogx 00;38
+

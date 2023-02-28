@@ -9,6 +9,7 @@ export PATH="/data/data/com.termux/files/home/.local/bin/lvim:$PATH"
 #export NIM_HOME="/data/data/com.termux/files/home/Nim/build/nim-1.9.1"
 export PATH="$NIM_HOME/bin:$PATH"
 export PATH="$HOME/.nimble/bin:$PATH"
+eval "`dircolors -b ~/.dircolors`"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
