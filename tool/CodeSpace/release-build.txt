@@ -1,9 +1,11 @@
-./gradlew desktop:dist -Pbuildversion="141.3" --stacktrace
-gradlew desktop:dist server:dist android:assembleRelease -Pbuildversion=${RELEASE_VERSION}
-gradlew android:assembleRelease -Pbuildversion=141.3
-gradlew server:dist -Pbuildversion=141 -Dfile.encoding=GBK
+all: gradlew desktop:dist server:dist android:assembleRelease -Pbuildversion=${RELEASE_VERSION}
+
+android: gradlew android:assembleRelease -Pbuildversion=141.3
+win:  ./gradlew desktop:dist -Pbuildversion="141.3" --stacktrace
+server:gradlew server:dist -Pbuildversion=141 -Dfile.encoding=UTF-8 
+
 git clone --depth=1 --branch=master https://github.com/Anuken/Mindustry
-https://github.com/BlackDeluxeCat/MI2-Utilities-Java
+
 -Xlint:unchecked
 //set custom zoom
 const minZoomLim = 0.5;
@@ -11,19 +13,17 @@ const maxZoomLim = 25;
 Vars.renderer.minZoom;
 Vars.renderer.maxZoom;
 Vars.headless
-git clone --depth=1 --branch=master https://github.com/Anuken/animdustry
 
 https://ghproxy.com/
 
 git clone --depth=1 --branch=master https://ghproxy.com/https://github.com/Anuken/Mindustry
-maven1
+
 
 maven{ url "https://maven.aliyun.com/repository/central" }
 maven{ url "https://maven.aliyun.com/repository/public" }
 maven{ url "https://https://maven.aliyun.com/repository/google" }
 maven{ url "https://https://maven.aliyun.com/repository/gradle-plugin" }
 
-maven2
 
 mavenLocal()
 maven{ url "https://maven.aliyun.com/repository/central" }
@@ -34,8 +34,3 @@ maven{ url "https://oss.sonatype.org/content/repositories/snapshots/" }
 maven{ url 'https://jitpack.io' }
 mavenCentral()
 google()
-https://raw.fastgit.org/freefq/free/master/v2
-
-
-
-window.zoomLevel
