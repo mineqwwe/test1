@@ -13,6 +13,7 @@ Apps Recomand:
 - [**Edge**](https://www.microsoft.com/edge)
 - [**Github app**](https://github.com/mobile)
 - [**Jvdroid**](https://play.google.com/store/apps/details?id=ru.iiec.jvdroid&gl=US)
+- [**LunarVim**](https://www.lunarvim.org/)
 - [**Mix**](https://mixplorer.com/)
 - [**Obsidian**](https://obsidian.md/)
 - [**Replit**](https://replit.com/)
