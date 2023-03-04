@@ -40,7 +40,7 @@ rm nim-1.6.10-linux_x64.tar.gz
 
 #Android-cmdline-tools
 #Temporarily depoly jdk in order to run sdkmanager
-export JAVA_HOME="$HOME/sdk/jdk-17.0.6+10/"
+export JAVA_HOME="$HOME/sdk/jdk-17.0.6+10"
 export JAVA_ROOT="$JAVA_HOME"
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$JAVA_HOME/lib:$PATH"
@@ -65,7 +65,6 @@ sudo chmod 777 sdkmanager
 ./sdkmanager --update
 #30/31/33
 ./sdkmanager --install "platform-tools" "platforms;android-31" "platforms;android-33" "build-tools;33.0.2" "build-tools;31.0.0" "build-tools;30.0.3" "platforms;android-30"
-#NOW press enter to agree google's policy
-y
+#NOW press enter y to agree google's policy
 ./sdkmanager --update
 echo done
