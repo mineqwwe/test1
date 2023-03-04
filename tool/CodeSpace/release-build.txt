@@ -1,8 +1,8 @@
 all: gradlew desktop:dist server:dist android:assembleRelease -Pbuildversion=${RELEASE_VERSION}
 
-android: gradlew android:assembleRelease -Pbuildversion=141.3
-win:  ./gradlew desktop:dist -Pbuildversion="141.3" --stacktrace
-server:gradlew server:dist -Pbuildversion=141 -Dfile.encoding=UTF-8 
+android: ./gradlew android:assembleRelease -Pbuildversion=141.3 -Dfile.encoding=UTF-8 
+win:  ./gradlew desktop:dist -Pbuildversion="141.3" -Dfile.encoding=UTF-8 
+server: ./gradlew server:dist -Pbuildversion=141.3 -Dfile.encoding=UTF-8 
 
 git clone --depth=1 --branch=master https://github.com/Anuken/Mindustry
 
