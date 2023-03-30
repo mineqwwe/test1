@@ -121,7 +121,7 @@ ORPHAN 00;31;100 # symlink to nonexistent file, or non-stat'able file
 SETUID 00;31;100 # file that is setuid (u+s)
 SETGID 07;33 # file that is setgid (g+s)
 CAPABILITY 07;31 # file with capability
-STICKY_OTHER_WRITABLE 01;93;102 # dir that is sticky and other-writable (+t,o+w)
+STICKY_OTHER_WRITABLE 03;04;01;93 # dir that is sticky and other-writable (+t,o+w)
 OTHER_WRITABLE 00;34;47 # dir that is other-writable (o+w) and not sticky
 STICKY 07;37 # dir with the sticky bit set (+t) and not other-writable
 # This is for files with execute permission:
