@@ -1,11 +1,4 @@
-[![.github/workflows/main.yml](https://github.com/mineqwwe/java-learning/actions/workflows/main.yml/badge.svg)](https://github.com/mineqwwe/java-learning/actions/workflows/main.yml)
-
-
-### Record time with Java
-
-*Slowly Learning*
-
-##### Learning through Moblie phone
+#### Learn ot Code through Moblie phone
 Apps Recomand:
 
 - [**Acode** ](https://github.com/deadlyjack/Acode)
