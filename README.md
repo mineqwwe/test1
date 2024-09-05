@@ -4,7 +4,6 @@ Apps Recomand:
 
 - [**Acode** ](https://github.com/deadlyjack/Acode)
 - [**Android IDE**](https://github.com/AndroidIDEOfficial/AndroidIDE)
-- [**Edge**](https://www.microsoft.com/edge)
 - [**Github app**](https://github.com/mobile)
 - [**Jvdroid**](https://play.google.com/store/apps/details?id=ru.iiec.jvdroid&gl=US)
 - [**LunarVim**](https://www.lunarvim.org/)
